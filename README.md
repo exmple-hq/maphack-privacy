@@ -1,0 +1,1 @@
+# maphack-privacy

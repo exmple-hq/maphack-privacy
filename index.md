@@ -4,6 +4,6 @@ MapHack does not collect, transmit, or store any personal data on external serve
 
 All processing happens locally within the user's browser. The extension accesses the visible structure of the ChatGPT interface in real time to render an in-browser sidebar for message indexing, turn navigation, and bookmarking.
 
-Bookmark and navigation state is stored temporarily in the browser's session storage and is automatically cleared when the tab is closed. No conversation content is logged, stored, or transmitted outside the browser.
+Bookmark data — consisting of message metadata and short previews, not full conversation content — is stored persistently in the browser's local storage (IndexedDB) and remains until the user removes it. Message index data is held in memory only for the duration of the active session. Temporary navigation state is stored in session storage and is automatically cleared when the tab is closed.
 
-This extension complies with the Chrome Web Store Developer Program Policies.
+No conversation content is logged, stored, or transmitted outside the browser. This extension complies with the Chrome Web Store Developer Program Policies.
